@@ -13,3 +13,18 @@ function initializePage() {const dataContainer = d3.select("#data-container");
         .classed("data-point", true)
         .text(d => d);
 
+// Attatching event listeners for interactivity
+dataPoints.on("mouseover", function() {
+    d3.select(this).style("background-color", "steelblue");});
+
+dataPoints.on('mouseout', function() {
+    d3.select(this).style("background-color", "neongreen");});}
+
+// Calling the initializePage function once the DOM content is loaded
+document.addEventListener("DOMContentLoaded", initializePage);
+// Inside the initializePage function
+dataPoints.on("mouseover", function() {
+    d3.select(this).style("background-color", "steelblue");});
+
+dataPoints.on('mouseout', function() {
+    d3.select(this).style("background-color", "neongreen");});
