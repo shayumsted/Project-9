@@ -1,1 +1,1 @@
-# Project-9
+This project is about creating a space for div elements within a DOM file to become interactive. Each of the elements will work to represent a specific data point that can change ina apperance whenever a user's hovers over the point. The project will work to help us learn how to create an interactive DOM file. 
